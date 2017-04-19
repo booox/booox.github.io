@@ -25,7 +25,7 @@ author: booox
 > 想要做到，就要先从物理上接近目标！
 
 
-## 最棒的工具
+## 最棒的工具一
 
 纯文本博客： Jekyll + Github
 
@@ -47,3 +47,12 @@ $ jekyll s
 ### 测试
 
 `http://localhost:4000`
+
+
+## 最棒的工具二
+
+Emmit
+
+> 让代码飞起来
+
+HTML, CSS 等代码的速写
