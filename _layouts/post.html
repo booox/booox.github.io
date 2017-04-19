@@ -30,9 +30,12 @@ layout: default
 
         </div>
         <hr>
-        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <!-- <article itemscope itemtype="http://schema.org/BlogPosting"> -->
+        <div class="content bs-docs-container markdown-body">
+
         {{content}}
-        </article>
+        <!-- </article> -->
+        </div>
         <hr>
 
         {% assign hasSimilar = '' %}
@@ -99,4 +102,3 @@ layout: default
     }
 }());
 </script>
-<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

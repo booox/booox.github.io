@@ -7,7 +7,6 @@
  */
 (function() {
     if (window.innerWidth > 770) {
-
         var sidebarWrap = document.querySelector('.right>.wrap')
 
         //fix 之后百分比宽度会失效，这里用js赋予宽度
@@ -44,7 +43,7 @@
  */
 function setContentMaxHeightInPC() {
     var windowHeight = window.innerHeight
-    var contentUl = document.querySelector('.content-ul')
+    var contentUl = document.querySelector('#content-side')
     var contentMaxHeight = windowHeight - 77 - 60
     contentUl.style.maxHeight = contentMaxHeight + 'px'
 }
@@ -55,7 +54,7 @@ function setContentMaxHeightInPC() {
  */
 function isMaxHeight() {
     var windowHeight = window.innerHeight
-    var contentUl = document.querySelector('.content-ul')
+    var contentUl = document.querySelector('#content-side')
     var contentMaxHeight = windowHeight - 77 - 60
     var contentHeight = contentUl.offsetHeight
     return contentMaxHeight === contentHeight
@@ -119,7 +118,7 @@ function ancherPostion(anchorBtn, rightDiv) {
  */
 function setContentMaxHeight() {
     var windowHeight = window.innerHeight
-    var contentUl = document.querySelector('.content-ul')
+    var contentUl = document.querySelector('#content-side')
     var contentMaxHeight = windowHeight - 180
     contentUl.style.maxHeight = contentMaxHeight + 'px'
 }
@@ -131,7 +130,6 @@ function moveTOC() {
         var TOCString = document.querySelector('#markdown-toc').innerHTML
         var contentUl = document.querySelector('#content-side')
         contentUl.insertAdjacentHTML('afterbegin', TOCString) //插入字符串
-
         // if (!isAndroidWechatBrowser()) {
 
             //添加scroll样式，为了平滑滚动

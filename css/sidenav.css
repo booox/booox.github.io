@@ -1,0 +1,200 @@
+/**
+ * Team members
+ * Avatars, names, and usernames for core team.
+ */
+.less-team .team-member {
+  color: #555;
+  line-height: 32px;
+}
+.less-team .team-member:hover {
+  color: #333;
+  text-decoration: none;
+}
+.less-team .github-btn {
+  float: right;
+  margin-top: 6px;
+  width: 185px;
+  height: 20px;
+}
+.less-team img {
+  float: left;
+  width: 32px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.docs-section table {
+  margin-bottom: 20px;
+}
+.docs-section td {
+  padding: 0 10px 5px 0;
+}
+.docs-content {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-color: #fff;
+  padding: 1px 60px 80px 60px;
+  margin: 0 -15px;
+  border: none;
+  border-radius: 0 0 4px 4px;
+}
+.docs-content .container-fluid {
+  padding: 0;
+}
+.docs-content {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.docs-content a {
+  color: #43759e;
+  text-decoration: none;
+}
+.docs-content a:hover,
+.docs-content a:focus {
+  color: #2c4d68;
+  text-decoration: underline;
+}
+.docs-content a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+.docs-section + .docs-section {
+  padding-top: 40px;
+}
+.sidebar {
+  display: none;
+}
+.sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+/* All levels of nav */
+.sidebar .nav > li > a {
+  display: block;
+  color: #36556e;
+  padding: 5px 20px;
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e8ebee;
+  border-right: 1px solid #d8dde2;
+}
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #1d365d;
+  background-color: transparent;
+  border-right: 1px solid #1d365d;
+}
+.sidebar .nav .nav {
+  display: none;
+  margin-bottom: 8px;
+}
+.sidebar .nav .nav > li > a {
+  padding: 3px 30px;
+  font-size: 90%;
+}
+.sidebar .glyphicon {
+  font-size: 12px;
+  margin-left: 10px;
+}
+@media (min-width: 992px) {
+  .sidebar {
+    display: block;
+    padding-top: 15px;
+  }
+  .sidebar .nav > .active > ul {
+    display: block;
+  }
+  .sidebar.affix,
+  .sidebar.affix-bottom {
+    width: 213px;
+  }
+  .sidebar.affix {
+    position: fixed;
+    top: 45px;
+  }
+  .sidebar.affix-bottom {
+    position: absolute;
+  }
+  .sidebar.affix .sidenav,
+  .sidebar.affix-bottom .sidenav {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar.affix-bottom,
+  .sidebar.affix {
+    width: 263px;
+  }
+}
+.docs-nav {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  background-color: #1d365d;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+.docs-nav .navbar-collapse {
+  border-color: #111f36;
+}
+.docs-nav .container .navbar-brand {
+  margin: 12px 0 0;
+  width: 100px;
+  padding: 0;
+}
+.docs-nav .container .navbar-brand img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.docs-nav .navbar-nav > li > a,
+.docs-nav .navbar-nav > li > span {
+  color: #b9c8e0;
+}
+.docs-nav .navbar-nav > li > a:hover,
+.docs-nav .navbar-nav > li > span:hover {
+  color: #fff;
+}
+.docs-nav .navbar-nav > .active > a,
+.docs-nav .navbar-nav > .active > span,
+.docs-nav .navbar-nav > .active > a:hover,
+.docs-nav .navbar-nav > .active > span:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.docs-nav .navbar-toggle {
+  border-color: #1d365d;
+}
+.docs-nav .navbar-toggle:hover {
+  background-color: #111f36;
+  border-color: #111f36;
+}
+.btn-outline {
+  color: #1d365d;
+  background-color: #fff;
+  border-color: #e5e5e5;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  color: #fff;
+  background-color: #1d365d;
+  border-color: #1d365d;
+}
