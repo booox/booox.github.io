@@ -13,7 +13,9 @@ author: booox
 `sqlite3_adapter.rb:27: [BUG] Segmentation fault at 0x00000000000110`
 
 
-### 解决办法
+
+
+### 解决办法一
 
 将 `gem 'sqlite3'` 移动到 `group :development, :test do`
 变成：
@@ -28,3 +30,21 @@ end
 而后 `bundle install`
 重启 `rails s`
 问题解决。
+
+
+### 解决办法二
+
+将下面两句注释掉
+
+```ruby
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+```
+
+而后 `bundle install`
+重启 `rails s`
+问题解决。
+
+附一张报错图：
+
+![](images/segmentation-fault.png)
