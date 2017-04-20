@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "170419 Atom fork failed: resource temporarily unavailable " 
-categories: Software 
-tags: Atom 
+title:  "Atom: fork failed: resource temporarily unavailable " 
+categories: Software
+tags: Atom
 author: booox
 ---
 

@@ -48,6 +48,11 @@ $ jekyll s
 
 `http://localhost:4000`
 
+### Jekyll 补充
+
+* 在后台运行 `$ jekyll server -B`
+* 关闭后台运行的 jekyll ： `$ pkill -f jekyll` 或 `kill -9 $(lsof -i tcp:4000 -t)`
+
 
 ## 最棒的工具二
 
