@@ -9,7 +9,7 @@
 title: I Computer
 brief-intro: a Life-long Learner
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://booox.github.io" # the base hostname & protocol for your site
+url: "https://booox.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
@@ -44,7 +44,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  parse_block_html: true
 
 # port
 # port: 1234
@@ -59,3 +58,5 @@ excerpt_separator: "\n\n\n\n"
 # paginate
 gems: [jekyll-paginate]
 paginate: 6
+
+nav-search: search
