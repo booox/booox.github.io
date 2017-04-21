@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Search booox.github.io
+title: Search
 permalink: /search/
 sitemap: false
-icon: heart
-type: page222
+icon: search
+type: page
 ---
 
 
 
 
-<div id="home-search" class="home">
-  <script>
+<script>
   (function() {
     var cx = '016789081195848024204:iueezo1wawg';
     var gcse = document.createElement('script');
@@ -21,6 +20,5 @@ type: page222
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-  </script>
-  <gcse:search></gcse:search>
- </div>
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
