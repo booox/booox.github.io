@@ -7,7 +7,6 @@ sitemap: false
 
 
 
-
 <script>
   (function() {
     var cx = '016789081195848024204:iueezo1wawg';
@@ -19,4 +18,4 @@ sitemap: false
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:searchbox-only></gcse:searchbox-only>
