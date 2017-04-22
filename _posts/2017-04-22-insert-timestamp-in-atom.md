@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "在 Atom 中快速插入时间戳"
-categories: software
+categories: Software
 tags: atom date timestamps
 author: booox
 date: 2017/04/22 09:09:12

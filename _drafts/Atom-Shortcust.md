@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Atom 快捷键"
-categories:  software
+categories:  Software
 tags:  atom
 ---
 

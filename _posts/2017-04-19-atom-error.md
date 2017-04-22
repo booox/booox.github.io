@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Atom: fork failed: resource temporarily unavailable "
 categories: Software
-tags: Atom
+tags: atom
 author: booox
 ---
 
