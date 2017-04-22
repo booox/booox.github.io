@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "ERROR: fsevent: running worker failed: Resource temporarily unavailable"
 categories: Rails
 tags: rails-error

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "170419 Meetup 分享"
 categories: Meetup
 tags:  meetup

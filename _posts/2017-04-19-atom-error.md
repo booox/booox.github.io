@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Atom: fork failed: resource temporarily unavailable " 
+comments: true
+title:  "Atom: fork failed: resource temporarily unavailable "
 categories: Software
 tags: Atom
 author: booox

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "添加 Disqus 评价系统到 Jekyll"
 categories: Jekyll
-tags: jekyll, disqus
+tags: jekyll disqus
 author: booox
 date: 2017/04/22 09:10:24
 ---

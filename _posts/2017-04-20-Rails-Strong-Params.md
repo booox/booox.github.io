@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Rails Strong Parameters"
 categories: Rails
 tags: rails

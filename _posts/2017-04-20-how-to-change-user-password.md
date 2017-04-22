@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Rails 管理员密码忘记了怎么办？"
 categories: Rails
 tags: rails

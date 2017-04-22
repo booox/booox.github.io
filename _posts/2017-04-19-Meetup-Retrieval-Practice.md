@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "170419 Meetup Retrieve Practice"
 categories: Meetup
 tags:  meetup

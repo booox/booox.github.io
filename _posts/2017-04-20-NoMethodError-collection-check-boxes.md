@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "NoMethodError in collection_check_boxes"
 categories: Rails
 tags: rails rails-error

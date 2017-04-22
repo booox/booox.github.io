@@ -1,10 +1,10 @@
 ---
 layout: post
+comments: true
 title:  "uninitialized constant User"
 categories: Rails
 tags: rails-error
 author: booox
-comments: true
 date: 2017/04/22 08:31:00
 ---
 

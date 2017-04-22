@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Rails Sqlite3 Segmentation fault"
 categories: Rails
 tags: rails
