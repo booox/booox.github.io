@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Rails 全栈资源收藏"
 categories: Collections
 tags:  rails fullstack links
