@@ -1,8 +1,10 @@
 ---
 layout: post
+comments: true
 title:  "Atom 快捷键"
 categories:  Software
 tags:  atom
+date: 
 ---
 
 * content
