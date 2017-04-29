@@ -9,10 +9,6 @@ type: page
 * content
 {:toc}
 
-## 关于我
-
-
-
 
 ## 联系我
 
@@ -20,9 +16,8 @@ type: page
 
 ## 关于本站
 
-**若您想使用这个 jekyll 博客主题，请访问：[https://github.com/Gaohaoyang/gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+主要记录随想随记
 
-~欢迎使用~
 
 
 
@@ -30,7 +25,8 @@ type: page
 
 *2017.4.18*
 
-- `[+]` 应用了 Gaohaoyang 的Jekyll 主题 (https://github.com/Gaohaoyang/gaohaoyang.github.io)
+- `[+]` 修复了图片不能显示的错误 ( `![](SITEURL/images/PendingMigrationError.png)` , SITEURL 为 `site.url` 用双大括号括起来 `{}` 这里不方便显示)
+- `[+]` 应用了 [Gaohaoyang 的Jekyll 主题](https://github.com/Gaohaoyang/gaohaoyang.github.io)
 
 
 ## 友情链接

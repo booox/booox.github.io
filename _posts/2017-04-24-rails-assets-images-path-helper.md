@@ -41,12 +41,17 @@ Rails 中静态资源的地址引用，特别是 images 如何调用有时是个
 
 ### 从 view 中引用
 任何在 `public` 文件夹中的文件，都可以通过根目录 ( `/` ) ，所以，可以使用：
-   ` <img src="/images/meta_learn.png" />`
+   `<img src="/images/meta_learn.png" />`
 如果你想使用 rails tag ，则可以使用：
     `<%= image_tag(“rss.jpg”, :alt => “rss feed”) %>`
 
 
 ## 在 Rails Console 中测试
+![]({{ site.url }}/images/)
+
+
+
+
 
 ```ruby
 

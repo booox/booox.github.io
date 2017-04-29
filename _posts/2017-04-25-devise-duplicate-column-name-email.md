@@ -1,10 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "duplicate column name: email ALTER TABLE "users""
+title:  "Devise: duplicate column name: email ALTER TABLE users"
 categories:   Rails
 tags:  rails-error devise
-date:
+date: 2017/04/26 09:09:58
 ---
 
 * content
@@ -70,7 +70,7 @@ invoke  active_record
 
 可见会生成 `add_devise_to_users.rb`
 
-![](images/devise-users.png)
+![]({{site.url}}/images/devise-users.png)
 
 比较这两个文件，其实都是在操作 `users` 这个表，且字段都是一样的。
 

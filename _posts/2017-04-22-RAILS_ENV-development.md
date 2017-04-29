@@ -16,7 +16,10 @@ date: 2017/04/22 20:04:52
 
 
 有时会出现这样的报错
-![](images/PendingMigrationError.png)
+![]({{ site.url }}/images/PendingMigrationError.png)
+
+
+
 
 ### 问题原因
 

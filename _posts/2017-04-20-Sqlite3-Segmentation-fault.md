@@ -48,4 +48,4 @@ end
 
 附一张报错图：
 
-![](images/segmentation-fault.png)
+![]({{site.url}}/images/segmentation-fault.png)

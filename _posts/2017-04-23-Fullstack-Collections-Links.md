@@ -60,6 +60,12 @@ Awesome Rails Fullstack
 * [Github](https://github.com/)
 * [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html) (Very Good)
 
+### Heroku
+
+* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+* [Heroku Error Codes](https://devcenter.heroku.com/articles/error-codes)
+* [Creating Static Sites in Ruby with Rack](https://devcenter.heroku.com/articles/static-sites-ruby)
+* [Deploying with Git](https://devcenter.heroku.com/articles/git)
 
 ### ref
 

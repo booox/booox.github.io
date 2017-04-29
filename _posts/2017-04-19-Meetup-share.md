@@ -53,6 +53,10 @@ $ jekyll s
 
 * 在后台运行 `$ jekyll server -B`
 * 关闭后台运行的 jekyll ： `$ pkill -f jekyll` 或 `kill -9 $(lsof -i tcp:4000 -t)`
+* 插入图片的用法：
+  * `![image-title-here](/path/to/image.jpg){:class="img-responsive"}`
+  * 具体用法： 将图片放到 `images` 文件夹当中
+    * 实例： `![]({{ site.url }}/images/image_name.png)`
 
 
 ## 最棒的工具二

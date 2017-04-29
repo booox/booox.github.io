@@ -39,8 +39,12 @@ Heroku, 一个很受欢迎的云平台，特点是不需要配置环境，代码
 
 ## 常用查错命令
 
+可以用 `heroku logs` 搭配 `grep` 命令来快速查错。
+> 注意下面命令中的 `|` ，这个被称为管道命令，可以这样认为将 `|` 前面的输出当作后面的输入
+> `-i` : 忽略大小写
+
 * 查看错误:
-  * `heroku logs | grep -i error`
+  * `heroku logs | grep -i error` (`-i` 不区分大小写)
 * 查看 model 对应关系：
   * `heroku logs grep -i -E 'belongs_to|has_many’`
 * 查找 bootstrap 时：
