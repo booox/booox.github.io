@@ -48,9 +48,29 @@ date: 2017/04/28 22:40:52
 
 ![]({{site.url}}/images/undefined-protected-1.png)
 
+
   * 最上面显示的是 `Routing Error` ，首先考虑可能是 `config/routes.rb`，检查后发现并没有问题
   * 考虑提示 `protected` ，此为 controller 中定义的方法，接着查看 `jobs_controller.rb` 就发现问题了。其实就是关闭的 `end` 的位置不对引起的。
   * ![]({{site.url}}/images/undefined-protected-2.png)
 
+>
 
-  
+  * `rails s` 非正常关闭或试图再次打开： `kill -9 $(lsof -i tcp:3000 -t)`
+
+> fatal in Admin::JobsController#publish : exception reentered
+
+![]({{site.url}}/images/exception-reentered-1.png)
+
+
+  * 报这个错，`exception reentered` ，搜索了一下，好像都与无限循环有关。可能是循环调用了相同的方法。
+  * 最终错误的原因，还真是这个原因
+  * ![]({{site.url}}/images/exception-reentered-2.png)
+  * 从图中可以看到 定义了一个名称为 `params` 的方法，而在这个方法内又有 `params.require(:job)` 也就是又调用了 `params` ，于是就出现循环调用。
+
+
+> NameError in Admin : undefined local variable or method 'job_params'
+
+![]({{site.url}}/images/job_params.png)
+
+  * 这个报错的原因是，当 rails 需要调用 `job_params` 这个方法时，却在下面找不到
+  * 后来发现方法名称错写成了 `jobs_params`

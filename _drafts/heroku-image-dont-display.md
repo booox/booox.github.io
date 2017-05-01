@@ -18,7 +18,6 @@ Heroku 会将免费用户存放到 `app/public` 当中的图片删除掉
 
 
 修改 *config/environments/production.rb*
-
 `config.assets.compile = true`
 
 终端里执行：

@@ -19,7 +19,7 @@ author: booox
 
 * 普通用户和管理员没分清：是 `group` 还是 `admin/group` ?
 * 操作对象没分清：是 `group` 还是 `post`
-* `rails s` 非正常关闭或试图再次打开： `kill -9 $(lsof -i tcp:3000 -t)`
+
 
 
 
