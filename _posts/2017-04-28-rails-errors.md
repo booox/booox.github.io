@@ -72,5 +72,36 @@ date: 2017/04/28 22:40:52
 
 ![]({{site.url}}/images/job_params.png)
 
+
   * 这个报错的原因是，当 rails 需要调用 `job_params` 这个方法时，却在下面找不到
   * 后来发现方法名称错写成了 `jobs_params`
+
+
+> NameError : undefined local variable or method `“Logout”' for`
+
+  ![]({{site.url}}/images/link_to-nameError.png)
+  * 拼写错误： `Logout` 左右两边的引号为中文的引号
+
+
+> ArgumentError: No association found for name `profile'. Has it been defined yet?``
+
+![]({{site.url}}/images/no-association-name-profile.png)
+
+
+* 这个原因，主要是 语句的顺序错了，在定义 `:profile` 之前调用 `:profile` 了，顺序换一下。
+
+
+
+> 1 error prohibited this person from being saved: Tickets event must exist
+
+![]({{site.url}}/images/must-exist-inverse-of.png)
+
+  * 这是一对多的练习
+    * event: `has_many :tickets, :dependent => :destroy`
+    * ticket: `belongs_to :event`
+  * 编辑倒是正常，可是新建却报错
+  * 最后将 `has_many` 修改如下，问题解决。
+    * event: `has_many :tickets, inverse_of: :event, :dependent => :destroy`
+  * ref links:
+    * [has_many and nested attributes](https://github.com/rails/rails/issues/25198)
+    * [has_many](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_many)

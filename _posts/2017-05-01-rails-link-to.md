@@ -16,9 +16,9 @@ date: 2017/05/01 20:29:41
 
 
 
-## 1. 最常见的用法
+## 最常见的用法
 
-### 1.1 访问 `/jobs`
+### 访问 `/jobs`
 
 例如，想访问 `jobs#index` 即 `jobs` **Controller** 中的 `index` 这个 **Action**
 
@@ -33,7 +33,7 @@ date: 2017/05/01 20:29:41
 
 > `<a href="/jobs">Jobs</a>`
 
-### 1.2. 访问 `/jobs/:id`
+### 访问 `/jobs/:id`
 
 例如，想访问 `jobs#show` 即 `jobs` **Controller** 中的 `show` 这个 **Action**
 
@@ -148,8 +148,33 @@ end
 
 > `<a data-remote="true" href="/">Javascript</a>`
 
+## link_to_if
+
+这个相当于 `link_to` 再加上一个条件判断
+它的语法是：
+
+`link_to_if(condition, name, options = {}, html_options = {}, &block)`
+
+它会先判断条件，如果条件成立，则依照后面给定的 `name` , `options` 等创建超链接，否则只会返回 `name` 。
+
+```
+<%= link_to_if(@current_user.nil?, "Login", new_user_session_path) %>
+# If the user isn't logged in...
+# => <a href="/sessions/new/">Login</a>
+
+<%=
+   link_to_if(@current_user.nil?, "Login", new_user_session_path) do
+     link_to(@current_user.login, “Logout”, destroy_user_session_path)
+   end
+%>
+# If the user isn't logged in...
+# => <a href="/sessions/new/">Login</a>
+# If they are logged in...
+# => <a href="/accounts/show/3">my_username</a>
+```
 
 
 ## Links
 
 * [How to use link_to in Rails](https://mixandgo.com/blog/how-to-use-link_to-in-rails)
+* [ActionView::Helpers::UrlHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html)
