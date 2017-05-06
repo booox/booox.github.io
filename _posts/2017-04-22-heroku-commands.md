@@ -20,7 +20,7 @@ Heroku, 一个很受欢迎的云平台，特点是不需要配置环境，代码
 * 查看 remote : `git remote -v`
 * 添加远程仓库： `git remote add heroku git@heroku.com:xxx-xxx-xx.git`
 * 删除本地 remote: `git remote rm heroku`
-* 推送本地分支到 heroku 的 master 分支： `git push heroku 分支名:master`
+* 推送本地分支到 heroku 的 master 分支： `git push heroku 本地欲推送的分支名:master`
 
 ### 基础指令
 
@@ -33,8 +33,15 @@ Heroku, 一个很受欢迎的云平台，特点是不需要配置环境，代码
 
 ## 在 heroku 执行 rails/rake 命令
 
-`heroku run rails c`
+`heroku run rails console`
 `heroku run rake db:migrate`
+
+* heroku 三兄弟
+`heroku run rake db:drop`
+`heroku run rake db:create`
+`heroku run rake db:migrate`
+
+`heroku run rake db:seed`
 
 
 ## 常用查错命令
@@ -63,3 +70,10 @@ Heroku, 一个很受欢迎的云平台，特点是不需要配置环境，代码
 ![](https://ww3.sinaimg.cn/large/006tKfTcgy1few90o2idyj30t807540j.jpg)
 
 * 这种情况多数由于网络的原因，与 heroku 没有建立连接，可以稍候再试，或重启网络，甚至使用 VPN ……
+
+
+> 快速查错
+
+执行 `heroku logs | grep -i error` ，可以快速检索出 heroku 报错的位置
+
+![]({{site.url}}/images/sanitizer-allowed-tags.png)
