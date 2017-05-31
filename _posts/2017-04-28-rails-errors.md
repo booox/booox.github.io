@@ -105,3 +105,19 @@ date: 2017/04/28 22:40:52
   * ref links:
     * [has_many and nested attributes](https://github.com/rails/rails/issues/25198)
     * [has_many](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_many)
+
+
+> AASM::UnknownStateMachineError (There is no state machine with the name 'default' defined in Object)
+
+![]({{site.url}}/images/aasm-state-error-01.png)
+
+
+* model 中找不到对应的状态的定义
+* 原因是　`include AASM` 那一块放到类的定义之外了。
+* ![]({{site.url}}/images/aasm-state-error-02.png)
+
+
+> NameError: uninitialized constant Product::ImageUploader
+
+* 实际操作时， 重启 rails ，并没有解决问题
+* 重新 `bundle install` ，之后再次重启 rails 问题竟然消失了。

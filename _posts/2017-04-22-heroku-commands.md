@@ -77,3 +77,12 @@ Heroku, 一个很受欢迎的云平台，特点是不需要配置环境，代码
 执行 `heroku logs | grep -i error` ，可以快速检索出 heroku 报错的位置
 
 ![]({{site.url}}/images/sanitizer-allowed-tags.png)
+
+
+> ActionView::Template::Error Missing host to link to!
+
+`config/environments/production.rb` 里添加下面这样一句
+
+`Rails.application.routes.default_url_options[:host] = 'myappsname.herokuapp.com'`
+
+[Heroku/devise - Missing host to link to! Please provide :host parameter or set default_url_options(http://stackoverflow.com/questions/4114835/heroku-devise-missing-host-to-link-to-please-provide-host-parameter-or-set-d)
