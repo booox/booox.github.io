@@ -59,6 +59,21 @@ Datepicker and Datetimepicker
 
 ```
 
+## 让 Simple form 支持 Datepicker
+
+因为实际的项目中使用了 `simple_form`，所以也就让它支持 Datepicker
+
+有这样一种用法： `<%= f.input :created_at, :as=> 'datepicker' ,:label => 'Date of send' %>`
+
+但实际却会报错：`No input found for datepicker`
+
+这是因为，对于 `simple_form` 这个 Gem，它并不知道 input 有个类型叫 `:datepicker`
+
+而我们要做的是，将上述用法修改为：
+
+`<%= f.input :return_date, as: :string, label: "选择线路返回日期", class: "form-control" %>`
+
+
 ## Datetimepicker
 
 * *Gemfile*
@@ -131,3 +146,4 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 * [Moment Locale Files](https://github.com/moment/moment/tree/develop/locale)
 * [Using Locales](http://eonasdan.github.io/bootstrap-datetimepicker/#using-locales)
 * [Gem: bootstrap3-datetimepicker-rails](https://github.com/TrevorS/bootstrap3-datetimepicker-rails)
+* [Trouble getting datepicker in simple_form](https://stackoverflow.com/questions/22256407/trouble-getting-datepicker-in-simple-form)
