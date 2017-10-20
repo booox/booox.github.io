@@ -1182,3 +1182,9 @@ class Car
 end
 
 ```
+
+
+
+## Mac 用 VirtualBox  安装 windows 7
+
+## 安装好之后 USB 不起作用
