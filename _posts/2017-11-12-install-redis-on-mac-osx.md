@@ -29,10 +29,6 @@ Rails 中用 Redis 搭建排行榜
 
 设置 redis 随系统自启动
 
-`re`
-
-启动 redis
-
 `launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist`
 
 启动 redis ( 不使用 `launchctl` )
@@ -294,3 +290,12 @@ requirepass foobar
 * [Redis Clients](https://redis.io/clients)
 * [redis-rb](https://github.com/redis/redis-rb)
 * [redis-rb gem docs](http://www.rubydoc.info/gems/redis)
+
+
+
+
+127.0.0.1:6379> KEYS *
+1) "quiz:13"
+2) "quiz:53"
+3) "quiz:117"
+4) "quiz:55"

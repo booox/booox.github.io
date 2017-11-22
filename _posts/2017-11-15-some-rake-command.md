@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Rake 相关的事"
+title:  "Rake 的一些命令"
 categories:  Rails
 tags:  Rails rake
 date: 2017/11/16 10:48:20
@@ -10,8 +10,7 @@ date: 2017/11/16 10:48:20
 * content
 {:toc}
 
-Rake 相关的事
-
+Rake 的一些命令
 
 
 
