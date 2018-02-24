@@ -37,6 +37,10 @@ Anaconda 包管理
   * Linux, macOS: `source activate env_name`
   * Windows: `activate env_name`
 
+注销环境
+  * Linux, macOS: `source deactivate`
+  * Windows: `deactivate`
+
 查看已安装包
 
 `conda list | grep beautiful`
