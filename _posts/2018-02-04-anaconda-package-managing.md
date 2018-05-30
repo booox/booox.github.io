@@ -48,9 +48,11 @@ Anaconda 包管理
 3. 删除操作
 
 删除安装包: `conda remove --name env_name beautifulsoup4`
-验证已删除：`conda list |grep beautifulsoup4`
+验证安装包已删除：`conda list |grep beautifulsoup4`
+
 删除环境: `conda remove --name env_name all`
-验证已删除: `conda info --envs`
+验证环境已删除: `conda info --envs`
+
 删除 Conda:
   * Linux, macOS: `rm -rf ~/anaconda`
   * Windows: 通过控制面板 `添加删除程序` 来删除
