@@ -38,6 +38,7 @@ date: 2017/06/27 19:24:16
 
 在 app/models/user.rb 里增加一个方法
 
+```
 def display_name
   if self.username.present?
     self.username
@@ -45,11 +46,13 @@ def display_name
     self.email.split("@").first
   end
 end
+```
+
 当 username 存在的时候，显示 username，当 username 不存在的时候，用 email 的前缀作为用户名显示。
 
 View 里的代码再改一下
 
-Hi!,<%= current_user.display_name %>
+`Hi!,<%= current_user.display_name %>`
 
 
 ## Links

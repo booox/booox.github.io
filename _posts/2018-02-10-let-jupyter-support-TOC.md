@@ -20,21 +20,28 @@ macOS
 Anaconda
 Jupyter
 
-## 安装
 
-在 Terminal 中执行：
+1. 需要用这个安装侧边栏 管理插件
+[jupyter_nbextensions_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
+`conda install -c conda-forge jupyter_nbextensions_configurator`
 
-```
-pip install jupyterthemes
-```
-## 应用
+ 装好之后，重启 Jupyter
 
-* 在 Terminal 中依次执行：
+ 2. 再安装包罗万象的插件包
+[jupyter_contrib_nbextensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)
+`conda install -c conda-forge jupyter_contrib_nbextensions`
+执行了两三次都提示 `An HTTP error occurred when trying to retrieve this URL.`
+后来翻墙问题解决。
 
-```
-jt -l
-jt -t grade3
-```
+3. 接着就可以通过在地址栏中输入
+`<base_url>/nbextensions ` 来访问。
+
+   启用 `Table of Contents (2)`
+
+-----
+
+1. jupyter 的插件
+[jupyter_contrib_nbextensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/toc2)
 
 * 重启 jupyter
 
