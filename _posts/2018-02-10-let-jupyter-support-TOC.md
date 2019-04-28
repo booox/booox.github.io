@@ -38,7 +38,7 @@ date: 2018/02/10 09:08:03
 
 执行了两三次都提示 `An HTTP error occurred when trying to retrieve this URL.`
 
-后来翻墙问题解决。
+后来翻墙问题解决。iii
 
 3. 接着就可以通过在地址栏中输入
 
